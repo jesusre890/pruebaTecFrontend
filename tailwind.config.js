@@ -7,7 +7,7 @@ export default withMT({
   theme: {
     extend: {
       fontFamily: {
-        sans: ["ui-sans-serif", "system-ui"],
+        sans: ["Manrope", "sans-serif", "system-ui"],
       },
     },
   },

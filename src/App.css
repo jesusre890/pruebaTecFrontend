@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 *{
   box-sizing: border-box;
 }
@@ -6,7 +8,16 @@ html{
   scroll-behavior: smooth;
 }
 
-@font-face {
+/*@font-face {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
+}*/
+
+
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+}
+
+.text-customText {
+  color: #19417F; 
 }
