@@ -3,10 +3,10 @@ import Cards from "./Cards";
 
 const QueHacemos = () => {
   return (
-    <div className=" mx-6 mt-16 md:mt-28 md:mx-28">
+    <div className=" mx-6 mt-16 md:mt-28 md:mx-28" id="quienes">
       <div className=" md:flex md:justify-between">
         <div>
-          <h1 className="text-3xl font-semibold text-[#2b4875] md:text-3xl">
+          <h1 className="text-3xl font-semibold text-[#2b4875] md:text-2xl">
             ¿Qué hacemos?
           </h1>
           <p className=" mt-4 text-[#0e1a2b] text-base md:max-w-xl md:text-xl">

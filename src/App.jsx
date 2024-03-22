@@ -15,6 +15,8 @@ import Convocatorias from "./components/convocatorias/Convocatorias";
 import Aliados from "./components/aliados/Aliados";
 import Financiadores from "./components/aliados/Financiadores";
 import Impacto from "./components/Impacto";
+import Oportunidades from "./components/oportunidades/Oportunidades";
+import Contacto from "./components/contacto/Contacto";
 
 function App() {
   function NavList() {
@@ -27,7 +29,7 @@ function App() {
           className="p-1 font-normal"
         >
           <a
-            href="#"
+            href="#quienes"
             className="flex items-center hover:text-blue-500 transition-colors"
           >
             Quiénes somos
@@ -40,7 +42,7 @@ function App() {
           className="p-1 font-normal"
         >
           <a
-            href="#"
+            href="#programas"
             className="flex items-center hover:text-blue-500 transition-colors"
           >
             Programas
@@ -53,7 +55,7 @@ function App() {
           className="p-1 font-normal"
         >
           <a
-            href="#"
+            href="#impacto"
             className="flex items-center hover:text-blue-500 transition-colors"
           >
             Impacto
@@ -66,7 +68,7 @@ function App() {
           className="p-1 font-normal"
         >
           <a
-            href="#"
+            href="#sumate"
             className="flex items-center hover:text-blue-500 transition-colors"
           >
             Súmate
@@ -92,7 +94,7 @@ function App() {
           className="p-1 font-normal"
         >
           <a
-            href="#"
+            href="#recursos"
             className="flex items-center hover:text-blue-500 transition-colors"
           >
             Recursos
@@ -105,7 +107,7 @@ function App() {
           className="p-1 font-normal"
         >
           <a
-            href="#"
+            href="#sedes"
             className="flex items-center hover:text-blue-500 transition-colors"
           >
             Sedes
@@ -175,7 +177,9 @@ function App() {
         <Convocatorias />
         <Aliados />
         <Financiadores />
-        <Impacto/>
+        <Impacto />
+        <Oportunidades />
+        <Contacto/>
         <Footer />
       </main>
       <footer></footer>
