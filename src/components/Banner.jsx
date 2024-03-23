@@ -4,7 +4,7 @@ import img2 from '../assets/headerImagen2.png'
 import img3 from '../assets/headerImage.jpg'
 
 const Banner=() => {
-  const carouselHeight = 600; 
+  const carouselHeight = 500; 
 
   return (
     <div style={{ height: carouselHeight + "px", position: "relative" }}>
