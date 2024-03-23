@@ -1,6 +1,5 @@
 import Cards from "./Cards";
 
-
 const Convocatorias = () => {
   return (
     <div className=" mx-6 mt-16 md:mt-28 md:mx-28" id="programas">

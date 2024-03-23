@@ -5,6 +5,7 @@ import {
   Collapse,
   Typography,
   IconButton,
+  Button,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "./assets/logoAgora.png";
@@ -21,10 +22,10 @@ import Contacto from "./components/contacto/Contacto";
 function App() {
   function NavList() {
     return (
-      <ul className="my-2 flex flex-col items-center gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      <ul className="my-2 flex flex-col items-center gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
         <Typography
           as="li"
-          variant="medium"
+          variant="small"
           color="blue-gray"
           className="p-1 font-normal"
         >
@@ -37,7 +38,7 @@ function App() {
         </Typography>
         <Typography
           as="li"
-          variant="medium"
+          variant="small"
           color="blue-gray"
           className="p-1 font-normal"
         >
@@ -50,7 +51,7 @@ function App() {
         </Typography>
         <Typography
           as="li"
-          variant="medium"
+          variant="small"
           color="blue-gray"
           className="p-1 font-normal"
         >
@@ -63,7 +64,7 @@ function App() {
         </Typography>
         <Typography
           as="li"
-          variant="medium"
+          variant="small"
           color="blue-gray"
           className="p-1 font-normal"
         >
@@ -76,7 +77,7 @@ function App() {
         </Typography>
         <Typography
           as="li"
-          variant="medium"
+          variant="small"
           color="blue-gray"
           className="p-1 font-normal"
         >
@@ -89,7 +90,7 @@ function App() {
         </Typography>
         <Typography
           as="li"
-          variant="medium"
+          variant="small"
           color="blue-gray"
           className="p-1 font-normal"
         >
@@ -102,7 +103,7 @@ function App() {
         </Typography>
         <Typography
           as="li"
-          variant="medium"
+          variant="small"
           color="blue-gray"
           className="p-1 font-normal"
         >
@@ -115,7 +116,7 @@ function App() {
         </Typography>
         <Typography
           as="li"
-          variant="medium"
+          variant="small"
           color="blue-gray"
           className="p-1 font-normal"
         >
@@ -145,14 +146,17 @@ function App() {
 
   return (
     <div className="">
-      <header className="">
+      <header className=" lg:sticky lg:top-0 lg:z-50">
         <Navbar className="mx-auto max-w-screen-2xl px-6 py-3 shadow-none">
           <div className="flex items-center justify-between text-blue-gray-900">
-            <img src={logo} alt="" className=" w-40" />
+            <img src={logo} alt="" className=" w-28" />
 
             <div className="hidden lg:block">
               <NavList />
             </div>
+            <Button className=" ml-10 lg:ml-0 rounded-full h-6 py-0 mt-0 w-28 bg-[#C1285D] capitalize text-base font-medium lg:mt-0 lg:h-6 lg:w-24">
+              Donar
+            </Button>
             <IconButton
               variant="text"
               className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -179,7 +183,7 @@ function App() {
         <Financiadores />
         <Impacto />
         <Oportunidades />
-        <Contacto/>
+        <Contacto />
         <Footer />
       </main>
       <footer></footer>
