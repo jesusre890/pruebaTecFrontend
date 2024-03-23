@@ -32,10 +32,10 @@ const Cards=() => {
             </CardHeader>
             <CardBody className="rounded-xl text-black">
               <Typography variant="h5" className="mb-2">
-                {item.author}
+                {item.author || 'Autor desconocido'}
               </Typography>
               <Typography className=" font-medium lg:text-sm">
-                {item.title}
+                {item.title || 'Titulo desconocido'}
               </Typography>
             </CardBody>
             <CardFooter className="pt-0">
