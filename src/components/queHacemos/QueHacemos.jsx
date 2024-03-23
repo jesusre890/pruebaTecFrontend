@@ -3,7 +3,7 @@ import Cards from "./Cards";
 
 const QueHacemos = () => {
   return (
-    <div className=" mx-6 mt-16 md:mt-28 lg:mx-44" id="quienes">
+    <div className=" mx-6 mt-16 md:mt-28 lg:mx-28" id="quienes">
       <div className=" md:flex md:justify-between">
         <div>
           <h1 className="text-3xl font-semibold text-[#2b4875] md:text-2xl">

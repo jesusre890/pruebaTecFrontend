@@ -9,15 +9,11 @@ import {
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "./assets/logoAgora.png";
-import Banner from "./components/Banner";
 import Footer from "./components/Footer";
-import QueHacemos from "./components/queHacemos/QueHacemos";
-import Convocatorias from "./components/convocatorias/Convocatorias";
-import Aliados from "./components/aliados/Aliados";
-import Financiadores from "./components/aliados/Financiadores";
-import Impacto from "./components/Impacto";
-import Oportunidades from "./components/oportunidades/Oportunidades";
-import Contacto from "./components/contacto/Contacto";
+import {RouterProvider,createBrowserRouter} from "react-router-dom";
+import {Routes} from "./routes/Routes";
+
+const router = createBrowserRouter(Routes);
 
 function App() {
   function NavList() {
@@ -82,7 +78,7 @@ function App() {
           className="p-1 font-normal"
         >
           <a
-            href="#"
+            href="/blog"
             className="flex items-center hover:text-blue-500 transition-colors"
           >
             Blog
@@ -121,10 +117,10 @@ function App() {
           className="p-1 font-normal"
         >
           <a
-            href="#"
+            href="/"
             className="flex items-center hover:text-blue-500 transition-colors"
           >
-            Change Lab
+            Home
           </a>
         </Typography>
       </ul>
@@ -147,7 +143,7 @@ function App() {
   return (
     <div className="">
       <header className=" lg:sticky lg:top-0 lg:z-50">
-        <Navbar className="mx-auto max-w-screen-2xl px-6 py-3 shadow-none">
+        <Navbar className="mx-auto max-w-screen-2xl px-6 py-3 shadow-lg">
           <div className="flex items-center justify-between text-blue-gray-900">
             <img src={logo} alt="" className=" w-28" />
 
@@ -176,17 +172,9 @@ function App() {
         </Navbar>
       </header>
       <main>
-        <Banner />
-        <QueHacemos />
-        <Convocatorias />
-        <Aliados />
-        <Financiadores />
-        <Impacto />
-        <Oportunidades />
-        <Contacto />
-        <Footer />
+        <RouterProvider router={router}/>
       </main>
-      <footer></footer>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,53 @@
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  Typography,
+  CardFooter,
+  Button,
+} from "@material-tailwind/react";
+import {useEffect, useState} from "react";
+
+const Cards=() => {
+  const [apiData,setApiData]=useState([]);
+  
+  useEffect(() => {
+    fetch(
+      "https://newsapi.org/v2/top-headlines?country=us&apiKey=80dcef6846384a558c41d219591a0d07"
+    )
+      .then((response) => response.json())
+      .then((data) => setApiData(data.articles))
+      .catch((error) => console.error("Error fetching data:", error));
+  },[]);
+  
+  return (
+    <div className="mt-20 mx-3 md:mt-28 lg:mx-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 justify-center">
+      {apiData.map((item, index) => (
+        <Card key={index} className="mt-6 w-96 shadow-none">
+          <CardHeader color="blue-gray" className="relative h-56">
+            <img
+              src={item.urlToImage}
+              alt="card-image"
+              style={{ objectFit: "cover", width: "100%", height: "100%" }}
+            />
+          </CardHeader>
+          <CardBody className="rounded-xl text-black">
+            <Typography variant="h5" className="mb-2">
+              {item.author}
+            </Typography>
+            <Typography className=" font-medium lg:text-sm">
+              {item.title}
+            </Typography>
+          </CardBody>
+          <CardFooter className="pt-0">
+            <Button className="rounded-3xl bg-[#ac4245] text-sm text-center py-1 px-7 font-normal">
+              CONOCER MÁS
+            </Button>
+          </CardFooter>
+        </Card>
+      ))}
+    </div>
+  );
+};
+
+export default Cards;
