@@ -14,7 +14,7 @@ const Banner = () => {
           <img src={blog} alt="blog banner" className="rounded-3xl" />
         </div>
       </div>
-      <div className=" bg-gray-800 text-white mt-6 p-6 rounded-2xl flex flex-wrap gap-5 justify-center lg: mx-52 lg:text-sm">
+      <div className=" bg-gray-800 text-white mt-6 p-6 rounded-2xl flex flex-wrap gap-5 justify-center lg:mx-52 lg:text-sm">
         <p>Blog</p>
         <p>Convocatoria Abierta</p>
         <p>Oportunidad Laboral</p>

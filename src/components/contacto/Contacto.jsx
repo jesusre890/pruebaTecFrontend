@@ -175,7 +175,7 @@ const Contacto = () => {
                 )}
               </div>
             </div>
-            <div className="flex justify-center md:justify-start mt-8">
+            <div className="flex justify-start md:justify-start mt-8">
               <ReCAPTCHA
                 sitekey="6LeYYqIpAAAAACkSHTqoBXdPoBbnV70dmJj9tgXu"
                 onChange={(val) => setCaptchaValido(val)}

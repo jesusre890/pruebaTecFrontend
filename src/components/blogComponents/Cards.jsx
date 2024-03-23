@@ -6,15 +6,13 @@ import {
   CardFooter,
   Button,
 } from "@material-tailwind/react";
-import {useEffect, useState} from "react";
+import {useEffect,useState} from "react";
 
 const Cards=() => {
   const [apiData,setApiData]=useState([]);
   
   useEffect(() => {
-    fetch(
-      "https://newsapi.org/v2/top-headlines?country=us&apiKey=80dcef6846384a558c41d219591a0d07"
-    )
+    fetch(import.meta.env.VITE_APP_API)
       .then((response) => response.json())
       .then((data) => setApiData(data.articles))
       .catch((error) => console.error("Error fetching data:", error));
