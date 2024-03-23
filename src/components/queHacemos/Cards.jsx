@@ -10,7 +10,7 @@ import que3 from '../../assets/que3.jpg'
 
 const Cards = () => {
   return (
-    <div className=" mt-16 flex flex-col gap-8 items-center lg:flex-row lg:items-start">
+    <div className=" mt-16 flex flex-col gap-8 items-center md:flex-col lg:flex-row lg:items-start lg:justify-around">
       <Card className="mt-6 w-96 shadow-none">
         <CardHeader color="blue-gray" className="relative h-56">
           <img src={que1} alt="card-image" />

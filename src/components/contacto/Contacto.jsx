@@ -9,12 +9,6 @@ import ReCAPTCHA from "react-google-recaptcha";
 const Contacto = () => {
   const [captchaValido, setCaptchaValido] = useState(null);
 
-  const captcha = useRef(null);
-
-  const onChange = () => {
-    console.log("captcha cambiado");
-  };
-
   const {
     register,
     formState: { errors },
