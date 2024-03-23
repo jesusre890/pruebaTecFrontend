@@ -10,8 +10,8 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "./assets/logoAgora.png";
 import Footer from "./components/Footer";
-import {RouterProvider,createBrowserRouter} from "react-router-dom";
-import {Routes} from "./routes/Routes";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Routes } from "./routes/Routes";
 
 const router = createBrowserRouter(Routes);
 
@@ -171,9 +171,7 @@ function App() {
           </Collapse>
         </Navbar>
       </header>
-      <main>
-        <RouterProvider router={router}/>
-      </main>
+      <RouterProvider router={router} />
       <Footer />
     </div>
   );
