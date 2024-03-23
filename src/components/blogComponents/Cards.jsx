@@ -20,30 +20,31 @@ const Cards=() => {
   
   return (
     <div className="mt-20 mx-3 md:mt-28 lg:mx-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 justify-center">
-      {apiData.map((item, index) => (
-        <Card key={index} className="mt-6 w-96 shadow-none">
-          <CardHeader color="blue-gray" className="relative h-56">
-            <img
-              src={item.urlToImage}
-              alt="card-image"
-              style={{ objectFit: "cover", width: "100%", height: "100%" }}
-            />
-          </CardHeader>
-          <CardBody className="rounded-xl text-black">
-            <Typography variant="h5" className="mb-2">
-              {item.author}
-            </Typography>
-            <Typography className=" font-medium lg:text-sm">
-              {item.title}
-            </Typography>
-          </CardBody>
-          <CardFooter className="pt-0">
-            <Button className="rounded-3xl bg-[#ac4245] text-sm text-center py-1 px-7 font-normal">
-              CONOCER MÁS
-            </Button>
-          </CardFooter>
-        </Card>
-      ))}
+      {apiData &&
+        apiData?.map((item, index) => (
+          <Card key={index} className="mt-6 w-96 shadow-none">
+            <CardHeader color="blue-gray" className="relative h-56">
+              <img
+                src={item?.urlToImage}
+                alt="card-image"
+                style={{ objectFit: "cover", width: "100%", height: "100%" }}
+              />
+            </CardHeader>
+            <CardBody className="rounded-xl text-black">
+              <Typography variant="h5" className="mb-2">
+                {item?.author}
+              </Typography>
+              <Typography className=" font-medium lg:text-sm">
+                {item?.title}
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0">
+              <Button className="rounded-3xl bg-[#ac4245] text-sm text-center py-1 px-7 font-normal">
+                CONOCER MÁS
+              </Button>
+            </CardFooter>
+          </Card>
+        ))}
     </div>
   );
 };
