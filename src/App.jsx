@@ -104,7 +104,7 @@ function App() {
           className="p-1 font-normal"
         >
           <a
-            href="/prueba"
+            href="#"
             className="flex items-center hover:text-blue-500 transition-colors"
           >
             Sedes

@@ -9,10 +9,19 @@ import {
 import con1 from "../../assets/o1.jpg";
 import con2 from "../../assets/o2.jpg";
 import con3 from "../../assets/o3.jpg";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const Cards = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
-    <div className=" mt-16 flex flex-col gap-8 items-center lg:flex-row lg:items-start">
+    <div
+      data-aos="fade-up"
+      className=" mt-16 flex flex-col gap-8 items-center lg:flex-row lg:items-start"
+    >
       <Card className="mt-6 w-96 shadow-none lg:w-1/2">
         <CardHeader color="blue-gray" className="relative h-56">
           <img src={con1} alt="card-image" />

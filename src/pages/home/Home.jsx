@@ -1,4 +1,4 @@
-import Banner from '../../components/Banner'
+import Banner from "../../components/Banner";
 import QueHacemos from "../../components/queHacemos/QueHacemos";
 import Convocatorias from "../../components/convocatorias/Convocatorias";
 import Aliados from "../../components/aliados/Aliados";

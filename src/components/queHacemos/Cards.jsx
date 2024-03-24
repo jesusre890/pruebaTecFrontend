@@ -4,13 +4,22 @@ import {
   CardBody,
   Typography,
 } from "@material-tailwind/react";
-import que1 from '../../assets/que1.jpg'
-import que2 from '../../assets/que2.jpg'
-import que3 from '../../assets/que3.jpg'
+import que1 from "../../assets/que1.jpg";
+import que2 from "../../assets/que2.jpg";
+import que3 from "../../assets/que3.jpg";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const Cards = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
-    <div className=" mt-16 flex flex-col gap-8 items-center md:flex-col lg:flex-row lg:items-start lg:justify-around">
+    <div
+      data-aos="fade-up"
+      className=" mt-16 flex flex-col gap-8 items-center md:flex-col lg:flex-row lg:items-start lg:justify-around"
+    >
       <Card className="mt-6 w-96 shadow-none">
         <CardHeader color="blue-gray" className="relative h-56">
           <img src={que1} alt="card-image" />

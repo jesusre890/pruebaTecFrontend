@@ -16,7 +16,7 @@ const Cards = () => {
       .then((response) => response.json())
       .then((data) => setApiData(data.data))
       .catch((error) => console.error("Error fetching data:", error));
-  },[]);
+  }, []);
 
   return (
     <div className="mt-20 mx-3 md:mt-28 lg:mx-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 justify-center">

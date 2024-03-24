@@ -1,8 +1,18 @@
 import { BiRightTopArrowCircle } from "react-icons/bi";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const Impacto = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
-    <div className=" px-6 pt-12 mt-24 rounded-xl md:mt-28 bg-[#19417F] lg:py-20 lg:pt-28" id="impacto">
+    <div
+      data-aos="fade-up"
+      className=" px-6 pt-12 mt-24 rounded-xl md:mt-28 bg-[#19417F] lg:py-20 lg:pt-28"
+      id="impacto"
+    >
       <div className=" md:flex md:justify-between mb-16 lg:mb-0">
         <div className="flex flex-col lg:flex-row lg:items-center lg:m-auto lg:gap-32">
           <div>

@@ -1,9 +1,19 @@
 import { BiRightTopArrowCircle } from "react-icons/bi";
 import Cards from "./Cards";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const QueHacemos = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
-    <div className=" mx-6 mt-16 md:mt-28 lg:mx-28" id="quienes">
+    <div
+      className=" mx-6 mt-16 md:mt-28 lg:mx-28"
+      id="quienes"
+      data-aos="fade-up"
+    >
       <div className=" md:flex md:justify-between">
         <div>
           <h1 className="text-3xl font-semibold text-[#2b4875] md:text-2xl">
@@ -16,7 +26,9 @@ const QueHacemos = () => {
           </p>
         </div>
         <div className="flex justify-end my-7 gap-3 text-[#0e1a2b] md:items-center md:-mt-20">
-          <p className=" font-bold md:text-lg">Conocer más sobre nuestros programas</p>
+          <p className=" font-bold md:text-lg">
+            Conocer más sobre nuestros programas
+          </p>
           <BiRightTopArrowCircle className=" text-2xl" />
         </div>
       </div>

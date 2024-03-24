@@ -1,9 +1,15 @@
 import { BiRightTopArrowCircle } from "react-icons/bi";
 import CarrouselAliados from "./CarrouselAliados";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import AOS from "aos";
 
 const Aliados = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
-    <div className=" mx-6 mt-16 md:mt-28 md:mx-28">
+    <div data-aos="fade-up" className=" mx-6 mt-16 md:mt-28 md:mx-28">
       <div className=" md:flex md:justify-between mb-16">
         <div>
           <h1 className="text-3xl font-semibold text-[#2b4875] md:text-3xl">
@@ -19,13 +25,11 @@ const Aliados = () => {
           </p>
         </div>
         <div className="flex lg:justify-end my-7 gap-3 text-[#0e1a2b] md:items-center md:-mt-20">
-          <p className=" font-bold md:text-sm">
-            Súmate como aliado
-          </p>
+          <p className=" font-bold md:text-sm">Súmate como aliado</p>
           <BiRightTopArrowCircle className=" text-2xl md:text-xl" />
         </div>
       </div>
-      <CarrouselAliados/>
+      <CarrouselAliados />
     </div>
   );
 };
