@@ -4,9 +4,7 @@
 <h4 align="start"> -Sección de blog consumiendo una API </h4>
 
 
-<br />
-Desarrollador: Jesús Re
-<br />
+
 
 ## **🖱 Proyecto**
 Las tecnologías utilizadas son React, Tailwind con tailwind material. 
@@ -14,6 +12,12 @@ En el archivo App.jsx estabrecí las rutas correspondientes y la interacción en
 <br />
 <br />
 El proyecto es responsivo tanto en celular como en desktop.
+<br />
+<br />
+Para el formato del código y facilite al correcto orden del mismo utilicé las extenciones de prettier y eslint
+<br />
+<br />
+Se agregaron efectos al realizar el scroll por el navegador, se utilizó la libreria de AOS.
 <br />
 <br />
 Los colores y fuentes fueron tomados de la página original y las imagenes se encuentran dentro del repositorio.
@@ -65,6 +69,8 @@ Las dependencias y distintas tecnologias que utilice para realizar el proyecto s
 <br />
 -Toastify
 <br />
+-AOS
+<br />
 <br />
 
 ## **🖱 DEPLOY**
@@ -72,3 +78,4 @@ Para deployar el proyecto utilicé Vercel.
 Este es el link: https://agora2030.vercel.app/
 <br />
 <br />
+Para poder levantar el proyecto de manera local solo hay que clonar el repositorio, desde la terminal instalar dependencias(npm i) y colocar npm run dev.
