@@ -27,12 +27,11 @@ const Cards = () => {
 
   return (
     <div className="mt-20 mx-3 md:mt-28 lg:mx-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 justify-center">
-      {apiData.map((item, index) => (
+      {apiData && apiData.map((item, index) => (
         <Card key={index} className="mt-6 w-96 shadow-none">
           <CardHeader color="blue-gray" className="relative h-56">
             <img
               src={item.urlToImage}
-              //src={item.thumbnailUrl}
               alt="card-image"
               style={{ objectFit: "cover", width: "100%", height: "100%" }}
             />
